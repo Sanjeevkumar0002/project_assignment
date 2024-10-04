@@ -42,11 +42,15 @@ Migrate the changes to the database: python3 manage.py migrate
 
 ##### Display Data from MySQL in HTML #####
 Create a view to retrieve data from the database:
-Create a user_list.html file in the templates:
+Create a users.html file in the templates:
 
 ##### Create a Form to Add a New User #####
 Create a new view for user creation:
 Create new_user.html with a form: Add csrf Token To understand this let us take an example. Suppose you are logged into the website. The attacker sends a link with the help of an email, chat, or with the use of sms. The link contains the request which the attacker wants to be performed. As the user is already authenticated on the website the request is completed when he clicks on the link. This type of request is very dangerous as it may take complete access to the data and other harmful actions may be performed such as transfer of funds, change of email and so on.
+
+### user_detail Route ########
+This route fetches a user's details by their id. If the user is not found, it returns a "User not found" error page.
+URL: /users/<id> (e.g., /users/1)
 
 #### Git Workflow ###
 Follow these steps to ensure proper version control:
