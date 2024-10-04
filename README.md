@@ -51,6 +51,8 @@ Create new_user.html with a form: Add csrf Token To understand this let us take 
 ### user_detail Route ########
 This route fetches a user's details by their id. If the user is not found, it returns a "User not found" error page.
 URL: /users/<id> (e.g., /users/1)
+Success: Displays user details on user_detail.html.
+Error: If the user doesn't exist, shows an error message on error.html.
 
 #### Git Workflow ###
 Follow these steps to ensure proper version control:
