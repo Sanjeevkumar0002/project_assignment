@@ -20,7 +20,7 @@ from myapp import views  # Import views from the 'myapp' app
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', views.hello, name='hello'), # Hello route
+    path('hello/', views.hello, name='hello'), # hello route
     path('users/', views.users, name='users'),  #users route
     path('new_user/', views.new_user, name='new_user'), # new_user
     path('users/<int:id>/', views.user_detail, name='user_detail'), # /users/1 route
