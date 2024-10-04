@@ -28,9 +28,8 @@ def user_detail(request, id):
         print(f"Fetching user with id: {id}")
         # This will raise Http404 if the user doesn't exist
         user = get_object_or_404(User, id=id)  
-        return render(request, 'user_detail.html', {'user': user})  # Correct template path without trailing slash
+        return render(request, 'user_detail.html', {'user': user})  
     
     except Exception as e:
-        # If there's any other exception, render a generic error page or return an error message
         return render(request, 'error.html', {'error_message': str(e)})
     
